@@ -16,29 +16,51 @@
       min-height: 100vh;
       background-color: #f0f8ff; /* Light blue background */
       color: #333;
+      box-sizing: border-box;
     }
 
     .container {
+      width: 90%; /* Adjusts to screen width */
+      max-width: 600px; /* Limit width on larger screens */
       text-align: center;
-      padding: 20px;
+      padding: 10vw; /* Responsive padding */
       background-color: #ffffff; /* White box */
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     }
 
     h1 {
       color: #007BFF; /* Blue color */
+      font-size: 7vw; /* Responsive font size */
+      margin-bottom: 1em;
     }
 
     p {
-      font-size: 18px;
+      font-size: 5vw; /* Adjust text size for small screens */
+      line-height: 1.5;
+      margin: 0 10px;
+    }
+
+    /* Media Query for tablets and larger screens */
+    @media (min-width: 600px) {
+      .container {
+        padding: 20px; /* Fixed padding for larger screens */
+      }
+      h1 {
+        font-size: 28px; /* Fixed size for headings */
+      }
+      p {
+        font-size: 18px; /* Fixed paragraph size */
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Hello this is my website</h1>
-    <p>I worked a lot of in this site</p>
+    <h1>Hello, this is my website!</h1>
+    <p>I worked a lot on this site to make it look great on any device.</p>
   </div>
 </body>
 </html>
+
+
